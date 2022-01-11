@@ -1,39 +1,188 @@
 @font-face {
     font-family: Roboto;
-    src: url("./");
+    src: url("./gotham/GothamMedium.ttf");
 }
 
 body{
-    background-color: rgb(30 215 96);
+    background-image: linear-gradient(to right, rgba(205, 110, 49, 09), rgba(127, 154, 68, 09));
     padding: 0px;
     font-family: Roboto;
+    display: flex;
+    flex-direction: column;
+    margin: 0px
     
+    
+}
+
+.logo{
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+    align-self:center;
+    margin-left: 20vw;
 }
 
 nav{  
-    position: relative;
-    left: -8px;
-    top: -8px;
     display: flex;
     flex-direction: row;
-    align-items:center;
-    justify-content: flex-end;
+    align-items:stretch;
+    justify-content:space-between;
     width: 100vw;
     height: 10vh;
-    background-color: rgb(25 20 20);
+    background-color: rgba(25 20 20);
     margin-left: 0px;
     margin-top: 0px;
     
+    
 }
 
-nav ul{
-    font-size: 1.6rem;
+ ul{
+    font-size: 1.1rem;
     color: white;
     display: flex;
-    
+    margin-right: 20vw;
+        
+}
+
+ul > img{
+    display: none;
 }
 
 li{
     list-style: none;
-    margin: 20px;
+    margin-left: 20px;
+}
+
+li > a{
+    text-decoration: none;
+    color: #fff;
+    text-overflow: ellipsis;
+}
+
+section{
+    width: 100vw;
+    height: 80vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+h1{
+  font-size: 3.8rem;
+  color: #fff;
+  margin-bottom: 20px;
+    
+}
+
+p{
+    font-size: 1.2rem;
+    margin-top: 0;
+    color: #fff;
+}
+
+button{
+    height: 40px;
+    width: 20vw;
+    border-radius: 500px;
+    background-color: #1ED760;
+    color: #fff;
+}
+
+.home{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    margin-left: 20vw;
+    
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-end;
+    justify-content:space-between;
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(25, 20, 20);
+    position: relative;
+    
+}
+
+span{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: flex-start;
+    margin-right: 25px;
+}
+
+.contato > a{
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.nota{
+    align-self: center;
+}
+
+.link{
+    text-decoration: none;
+    font-size: 1.8rem;
+    align-self: center;
+    color: #fff;
+}
+
+
+a:hover{
+    color: #1ed760;;
+}
+
+
+
+
+@media (max-width: 1000px) {
+    li{
+        display: none;
+    }
+    ul > img{
+        display: block;
+        align-self: flex-end;
+        justify-content: flex-end;
+        width: 6vw;
+        height: 6vh;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    section{
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    section >  p  {
+        font-size: 0.8rem;
+    }
+
+    section > h1{
+        font-size: 12pt;
+    }
+
+    section > button{
+        width: 19w;
+        height: 10vh;
+        border-radius: 10px;
+        text-overflow: unset;
+    }
+
+    footer{
+        height: 250px;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
