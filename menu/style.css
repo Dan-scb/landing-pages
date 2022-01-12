@@ -39,9 +39,9 @@ section{
     background-color: #fff;
    
     height: 70vh;
-    width: 60vw;
+    width: 100vw;
     display:grid ;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
 }
 
@@ -51,7 +51,7 @@ section > span{
 }
 
 span > h2{
-    font-size: 3.4rem;
+    font-size: 3.7rem;
     margin-bottom: 0px;
 }
 
@@ -78,11 +78,12 @@ div > button{
 }
 
 .image{
-    position: absolute;
-    right: 0px;
-    top: 95px;
-    width: 40vw;
-    height: 70vh;
+    
+    grid-column: 5 / span 6;
+    grid-row: 2 / span 3;
+    width: 32vw;
+    height: 58vh;
+    background-color: #fff;
     
 }
 
@@ -106,6 +107,21 @@ footer > h3{
     margin-left: 20px;
 }
 
+
+.response{
+    display: none;
+    flex-direction: column;
+    width: 15vw;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.response > button{
+    width: 30vw;
+    height: 10vh;
+}
+
 a:hover{
     color: #1ed760;
 }
@@ -113,4 +129,35 @@ a:hover{
 button:hover{
     border-bottom: solid 2px black ;
     border-right: solid 2px black;
+}
+
+@media (max-width: 1000px){
+    .image{
+        width: 22vw;
+        height: 18vh;
+        margin-top: 5vh;
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    section{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 80vh;
+    }
+    .btn{
+       display: none;
+    }
+
+    .response{
+        display: flex;
+    }
+    ul{
+        display: none;
+    }
 }
