@@ -27,31 +27,81 @@
     </header>
 
     <main class="about">
-        <div>
-            <span class="paragraphs">
-                <p>Skyrim Ganhou o premio de Jogo do ano em 2011.</p>
-                <p>Até hoje existe uma comunidade Grande e ativa entorno do game.</p>
-                <p>Recentemente a produtora do game Bethesda Lançou uma Edição especial, em comemoração aos 10 anos de Skyrim.</p>
+        <div class="mainTop">
+            <span class="mainSubtitle">
+            <h3>The Elder scrolls V </h3>
+            <h3 class="skyrim">Skyrim</h3>
             </span>
+            <div class="mainParagraphs">
+            
+            <span class="paragraphs">
+                <p class="pItem">Skyrim Ganhou o premio de Jogo do ano em 2011.</p>
+                <p class="pItem">Até hoje existe uma comunidade Grande e ativa entorno do game.</p>
+                <p class="pItem">Recentemente a produtora do game Bethesda Lançou uma Edição especial, em comemoração aos 10 anos de Skyrim.</p>
+            </span>
+            <img src="./public/skyrimI_icon.png" alt="skyrim">
+            </div>
         </div>
 
-        <div>
-            Galeria
+        <div class="galery">
+            <div class="renderMidia">
+                <iframe width="590" height="345" src="https://www.youtube.com/embed/JSRtYpNRoN0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="typeMidia">
+                <div class="imagOpen">
+                   
+                </div>
+            <nav class="galeryNav">
+                <ul>
+                    <li onclick="renderImages()">
+                        Imagens
+                    </li>
+                    <li onclick="renderVideos()">
+                        Videos
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="galeryFiles" onload="renderFiles()">
+                
+            </div>
+        </div>
+            
+
         </div>
     </main>
     <footer>
+        
         <ul>
-            <li>
-                git
+            <li><strong>Contato</strong></li>
+            <li class="linkContact">
+                <img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/50/000000/external-gmail-is-a-free-email-service-developed-by-google-logo-color-tal-revivo.png"/>
             </li>
-            <li>
-                Linkedin
+            <li class="linkContact">
+                <img src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-linkedin-social-media-justicon-flat-justicon.png"/>
             </li>
-            <li>
-                Gmail
+            <li class="linkContact">
+                <img src="https://img.icons8.com/material-rounded/50/000000/github.png"/>
             </li>
         </ul>
+        <span class="developer">
+        <h2>Densenvolvedora do Game</h2>
+        <a href="https://bethesda.net/pt/dashboard">Bethesda</a>
+        </span>
+
+        <span class="comunity">
+            <h2>comunidade</h2>
+            <a href="https://bethesda.net/community/category/82/skyrim?language%5B0%5D%5B%5D=en">Fórum</a>
+        </span>
+
+        <span class="info">
+        <h2>Mais informações</h2>
+        <a href="https://elderscrolls.bethesda.net/pt/skyrim10">The Elder Scrolls</a>
+        </span>
     </footer>
+
+    <script src="./scripts/script.js"></script>
     
 </body>
 </html>
